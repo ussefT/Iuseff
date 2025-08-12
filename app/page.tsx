@@ -144,7 +144,7 @@ export default function Home() {
         </div>
 
         {/* Cards */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 px-4 py-8 max-w-6xl mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:grid-cols-3 px-4 py-8 max-w-6xl mx-auto">
           {item.map((item, key) => {
             return (
               <Card
