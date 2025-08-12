@@ -12,7 +12,6 @@ export default function Home() {
       lastupdate: "Last updated: 3 days ago",
       href: "https://github.com/ussefT/bot_telegram",
     },
-    ,
     {
       title:"Hesab",
       describe:"Lite accounting program for calculating daily income and expenses written with django",
@@ -29,8 +28,9 @@ export default function Home() {
       title:"Menu food ",
       describe:"Written with Kotlin for android",
       lastupdate:"2 years ago",
-      href:"https://github.com/usseff-T/Food"
-    }
+      href:"https://github.com/usseff-T/Food",
+    },
+    
   ];
 
   const description_main =
