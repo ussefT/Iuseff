@@ -12,6 +12,25 @@ export default function Home() {
       lastupdate: "Last updated: 3 days ago",
       href: "https://github.com/ussefT/bot_telegram",
     },
+    ,
+    {
+      title:"Hesab",
+      describe:"Lite accounting program for calculating daily income and expenses written with django",
+      lastupdate:"5 days ago",
+      href:"https://github.com/ussefT/hesab"
+    },
+    {
+      title:"Python get SSTP",
+      describe:"Get sstp from vpngate",
+      lastupdate:"2 years ago",
+      href:"https://github.com/usseff-T/python-get-sstp"
+    },
+    {
+      title:"Menu food ",
+      describe:"Written with Kotlin for android",
+      lastupdate:"2 years ago",
+      href:"https://github.com/usseff-T/Food"
+    }
   ];
 
   const description_main =
