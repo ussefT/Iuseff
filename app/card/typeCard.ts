@@ -1,6 +1,6 @@
-export default interface card_object{
-    title:string,
-    href:string,
-    describe:string,
-    lastupdate:string
+export default interface card_object {
+  title: string;
+  href: string;
+  describe: string;
+  lastupdate: string;
 }
