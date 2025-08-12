@@ -16,14 +16,12 @@ export default function Card({title,describe,href,lastupdate}:card_object) {
         </Link>
       </h5>
       <p className="text-slate-600 leading-normal font-light text-sm sm:text-base">
-        Chat with AI via Hugging Face
         {describe}
       </p>
     </div>
     <div className="mx-3 border-t border-slate-200 pb-3 pt-2 px-1">
       <span className="text-sm text-slate-600 font-medium">
         {lastupdate}
-        Last updated: 3 days ago
       </span>
     </div>
   </div>
