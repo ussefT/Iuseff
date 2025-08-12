@@ -13,15 +13,19 @@ export default function Home() {
       ,href:'https://github.com/ussefT/bot_telegram'},
   ]
 
+  const description_main=
+  " Hi I am software engineer focused on building clean, scalable web applications."+
+    " Experienced in Python app and TypeScript development.";
   return (
 
 <>
-    <div className="p-15 m-15">
-
-    <div className="grid grid-cols-1 md:grid-cols-5 gap-6 px-4 py-8 max-w-6xl mx-auto">
-  {/* Profile Image and Texts - Responsive */}
+  
+<div className="w-full min-h-screen bg-white dark:bg-gray-900 px-4 py-8">
+      <div className="max-w-6xl mx-auto">
+   <div className="grid grid-cols-1 md:grid-cols-5 gap-6 px-4 py-8 max-w-6xl mx-auto">
+  {/* Left Side: Image, Name, Title, Description */}
   <div className="md:col-span-2 flex flex-col items-center md:items-start text-center md:text-left space-y-4">
-    {/* Image */}
+    {/* Profile Image */}
     <div className="rounded-3xl overflow-hidden">
       <Image
         width={150}
@@ -32,53 +36,70 @@ export default function Home() {
       />
     </div>
 
-    {/* Name and Title */}
+    {/* Name & Title */}
     <div>
       <h1 className="text-2xl md:text-3xl font-bold text-gray-800 dark:text-white">Usef Tootian</h1>
       <p className="text-lg md:text-xl text-gray-600 dark:text-gray-300">Software Engineering</p>
     </div>
-  </div>
 
-  {/* Progress Bars - Responsive Grid */}
-  <div className="md:col-span-3 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-6 md:mt-0">
-    {/* JavaScript */}
-    <div className="text-center">
-      <div className="mb-1 text-base font-medium text-yellow-700 dark:text-yellow-500">JavaScript</div>
-      <div className="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
-        <div className="bg-yellow-400 h-2.5 rounded-full w-[70%]"></div>
-      </div>
-    </div>
-
-    {/* Python */}
-    <div className="text-center">
-      <div className="mb-1 text-base font-medium text-green-700 dark:text-green-500">Python</div>
-      <div className="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
-        <div className="bg-green-600 h-2.5 rounded-full dark:bg-green-500 w-[80%]"></div>
-      </div>
-    </div>
-
-    {/* Red (possibly typo?) */}
-    <div className="text-center">
-      <div className="mb-1 text-base font-medium text-red-700 dark:text-red-500">Linux</div>
-      <div className="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
-        <div className="bg-red-600 h-2.5 rounded-full dark:bg-red-500 w-[50%]"></div>
-      </div>
-    </div>
-
-     <div className="text-center">
-      <div className="mb-1 text-base font-medium text-yellow-700 dark:text-yellow-500">Typescript</div>
-      <div className="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
-        <div className="bg-blue-400 h-2.5 rounded-full w-[70%]"></div>
-      </div>
+    {/* Description */}
+    <div className="mt-4 text-gray-700 dark:text-gray-300 text-sm md:text-base leading-relaxed">
+      <p>
+       {description_main}
+      </p>
     </div>
   </div>
 
+  {/* Right Side: Centered & Responsive Progress Bars */}
+  <div className="md:col-span-3 flex items-center justify-center">
+    {/* Main Progress Bar Grid - Centered Content */}
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6 w-full max-w-3xl">
+      {/* JavaScript */}
+      <div className="text-center px-4">
+        <div className="mb-1 text-base font-medium text-yellow-700 dark:text-yellow-500">JavaScript</div>
+        <div className="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2.5">
+          <div className="bg-yellow-400 h-2.5 rounded-full w-[70%]"></div>
+        </div>
+      </div>
+
+      {/* Python */}
+      <div className="text-center px-4">
+        <div className="mb-1 text-base font-medium text-green-700 dark:text-green-500">Python</div>
+        <div className="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2.5">
+          <div className="bg-green-600 h-2.5 rounded-full dark:bg-green-500 w-[80%]"></div>
+        </div>
+      </div>
+
+      {/* Linux */}
+      <div className="text-center px-4">
+        <div className="mb-1 text-base font-medium text-red-700 dark:text-red-500">Linux</div>
+        <div className="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2.5">
+          <div className="bg-red-600 h-2.5 rounded-full dark:bg-red-500 w-[50%]"></div>
+        </div>
+      </div>
+
+      {/* TypeScript */}
+      <div className="text-center px-4">
+        <div className="mb-1 text-base font-medium text-blue-700 dark:text-blue-300">TypeScript</div>
+        <div className="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2.5">
+          <div className="bg-blue-400 h-2.5 rounded-full w-[70%]"></div>
+        </div>
+      </div>
+
+      {/* ✅ Add more? Just include another card — it will wrap nicely! */}
+      {/* Example: React */}
+      <div className="text-center px-4">
+        <div className="mb-1 text-base font-medium text-cyan-700 dark:text-gray-200">NextJs</div>
+        <div className="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2.5">
+          <div className="bg-gray-500 h-2.5 rounded-full w-[75%]"></div>
+        </div>
+      </div>
+
+     
+    </div>
+  </div>
     
- 
-
-
- 
-
+</div>
 </div>
 <div className="inline-flex items-center justify-center w-full">
     <hr className="w-64 h-1 my-8 bg-gray-200 border-0 rounded-sm dark:bg-gray-700"/>
@@ -89,7 +110,7 @@ export default function Home() {
     </div>
 </div>
 
-<div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 px-4 py-6">
+<div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 px-4 py-8 max-w-6xl mx-auto">
 
       
       {item.map((item,key)=>{
