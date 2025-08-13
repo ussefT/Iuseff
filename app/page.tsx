@@ -4,17 +4,20 @@ import Card from "./card/card";
 import Link from "next/link";
 import SocialButtons from "./card/socialButton";
 import image from "./../public/iam.jpg";
+import TypeText from "./typingText/TypingText";
+
+
 export default function Home() {
   const item: card_object[] = [
     {
       title: "Bot Telegram",
       describe: "Chat with AI via Huggin Face",
-      lastupdate: "Last updated: 3 days ago",
+      lastupdate: "3 days ago",
       href: "https://github.com/ussefT/bot_telegram",
     },
     {
       title:"Hesab",
-      describe:"Lite accounting program for calculating daily income and expenses written with django",
+      describe:"Lite accounting program written with django",
       lastupdate:"5 days ago",
       href:"https://github.com/ussefT/hesab"
     },
@@ -34,7 +37,7 @@ export default function Home() {
   ];
 
   const description_main =
-    " Hi I am software engineer focused on building clean, scalable web applications." +
+    "Heello I am software engineer focused on building clean, scalable web applications." +
     " Experienced in Python app and TypeScript development.";
   return (
     <>
@@ -66,8 +69,9 @@ export default function Home() {
               </div>
 
               {/* Description */}
-              <div className="mt-4 text-gray-700 dark:text-gray-300 text-sm md:text-base leading-relaxed">
-                <p>{description_main}</p>
+              <div className="mt-4 text-gray-700 dark:text-gray-300 text-sm md:text-base leading-relaxed break-words ">
+                <TypeText text={description_main}/>
+                {/* {description_main} */}
               </div>
             </div>
 

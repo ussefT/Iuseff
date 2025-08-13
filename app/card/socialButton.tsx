@@ -8,7 +8,7 @@ export default function SocialButtons() {
         href="https://telegram.me/usseeff"
         target="_blank"
         rel="noopener noreferrer"
-        className="mb-2 inline-block rounded bg-[#0088cc] px-6 py-2.5 text-sm sm:text-base font-medium uppercase leading-normal text-white shadow-md transition duration-150 ease-in-out hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg min-w-[160px]"
+        className="mb-2 inline-block rounded bg-[#0088cc] px-6 py-2.5 text-sm sm:text-base font-medium uppercase leading-normal text-white shadow-md hover:shadow-lg hover:-translate-y-1 transition-all duration-300 focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg min-w-[160px]"
       >
         <span className="flex items-center justify-center gap-2">
           <svg
@@ -28,7 +28,7 @@ export default function SocialButtons() {
         href="https://github.com/ussefT"
         target="_blank"
         rel="noopener noreferrer"
-        className="mb-2 inline-block rounded bg-[#333] px-6 py-2.5 text-sm sm:text-base font-medium uppercase leading-normal text-white shadow-md transition duration-150 ease-in-out hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg min-w-[160px]"
+        className="mb-2 inline-block rounded bg-[#333] px-6 py-2.5 text-sm sm:text-base font-medium uppercase leading-normal text-white shadow-md hover:shadow-lg hover:-translate-y-1 transition-all duration-300 focus:outline-none focus:ring-0 active:shadow-lg min-w-[160px]"
       >
         <span className="flex items-center justify-center gap-2">
           <svg
@@ -47,7 +47,7 @@ export default function SocialButtons() {
       <button
         type="button"
         aria-label="Contact via Google"
-        className="mb-2 inline-block rounded bg-[#ea4335] px-6 py-2.5 text-sm sm:text-base font-medium uppercase leading-normal text-white shadow-md transition duration-150 ease-in-out hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg min-w-[160px]"
+        className="mb-2 shadow-md hover:shadow-lg hover:-translate-y-1 transition-all duration-300 cursor-pointer inline-block rounded bg-[#ea4335] px-6 py-2.5 text-sm sm:text-base font-medium uppercase leading-normal text-white ease-in-out  focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg min-w-[160px]"
       >
         <span className="flex items-center justify-center gap-2">
           <svg

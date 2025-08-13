@@ -12,10 +12,12 @@ export default function Card({
 
   return (
     <>
-      <div className="relative flex flex-col bg-white shadow-sm border border-slate-200 rounded-lg w-full">
-        <div className="p-4">
+      <div className="relative flex flex-col bg-white shadow-sm border-2  border-transparent hover:border-blue-500  transition-colors duration-300 rounded-lg w-full">
+        <div className="p-4 ">
           <h5 className="mb-2 text-slate-800 text-lg sm:text-xl font-semibold">
-            <Link href={href} target="_blank">
+            <Link href={href} 
+            className="hover:underline"
+            target="_blank">
               {title}
             </Link>
           </h5>
